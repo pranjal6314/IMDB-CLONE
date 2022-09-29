@@ -31,6 +31,7 @@ const Home = () => {
             >
               <div className="posterImage">
                 <img
+                  alt="posterImage"
                   src={`https://image.tmdb.org/t/p/original${
                     movie && movie.backdrop_path
                   }`}

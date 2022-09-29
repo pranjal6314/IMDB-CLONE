@@ -2,8 +2,37 @@
     width: 100%;
     position: relative;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
+}
+
+.loader-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.834);
+    z-index: 1;
+}
+
+.spinner {
+    width: 64px;
+    height: 64px;
+    border: 8px solid;
+    border-color: #3d5af1 transparent #3d5af1 transparent;
+    border-radius: 50%;
+    animation: spin-anim 1.2s linear infinite;
+}
+
+@keyframes spin-anim {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .movie__intro {
@@ -13,7 +42,7 @@
 .movie__backdrop {
     width: 100%;
     height: 500px;
-    object-fit:cover;
+    object-fit: cover;
     object-position: 0 35%;
 }
 
@@ -30,7 +59,7 @@
 }
 
 .movie__poster {
-    width:300px;
+    width: 300px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.86) 0px 22px 40px 6px;
 }
@@ -40,12 +69,12 @@
     display: flex;
     flex-direction: column;
     height: 450px;
-    justify-content:space-between ;
+    justify-content: space-between;
 }
 
-.movie__detailRightTop > div{
+.movie__detailRightTop>div {
     text-shadow: 0px 0px 5px #000000;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
 }
 
 .movie__name {
@@ -62,12 +91,11 @@
 }
 
 .movie__genre {
-    padding: .5rem;
+    padding: 0.5rem;
     border: 2px solid white;
     border-radius: 20px;
     margin-right: 1rem;
 }
-
 
 .movie__detailRightBottom {
     margin: 2rem 0;
@@ -82,7 +110,8 @@
     position: relative;
     align-items: center;
 }
-.synopsisText > div:last-of-type {
+
+.synopsisText>div:last-of-type {
     margin-left: auto;
 }
 
@@ -111,12 +140,11 @@
 }
 
 .movie__homeButton {
-    background-color:rgb(255, 0, 0);
-    
+    background-color: rgb(255, 0, 0);
 }
 
 .movie__imdbButton {
-    background-color:#f3ce13;
+    background-color: #f3ce13;
 }
 
 .newTab {
@@ -130,7 +158,6 @@
     align-items: flex-end;
     margin-bottom: 4rem;
 }
-
 
 .movie__productionComapany {
     width: 200px;

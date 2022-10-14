@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./movie.css";
+import Spinner from "./Spinner";
 import { useParams } from "react-router-dom";
 
 const Movie = () => {
@@ -24,7 +25,7 @@ const Movie = () => {
 
   return (
     <div className="movie">
-      {loading ? (
+      {{loading && <Spinner/>} ? (
         <div className="loader-container">
           <div className="spinner"></div>
         </div>
